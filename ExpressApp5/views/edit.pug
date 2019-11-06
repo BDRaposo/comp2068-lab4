@@ -1,0 +1,17 @@
+﻿extends layout
+
+block content
+ a(href='/products' title='List Products') List Products
+ h1 Edit Product
+  form(method='post' action='/products/edit')
+    div
+        label Title
+        input(name='title' required placeholder='Title' value=product.title)
+    div
+        label Description
+        input(name='description' required placeholder='Description' value=product.description)
+    div
+        label Price
+        input(name='price' required placeholder='Price' type='number' value=product.price)
+        input(name='id' type='hidden' value=product.id)
+    input(type='submit' value='Edit and Save Product')

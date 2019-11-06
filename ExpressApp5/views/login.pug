@@ -1,0 +1,13 @@
+﻿extends layout
+
+block content
+ h1 Login
+  form(method='post' action='/login')
+    div
+        label Username
+        input(name='username' required placeholder='Username')
+    div
+        label Password
+        input(name='password' required placeholder='password' type=password)
+    div
+    input(type='submit' value='Login')

@@ -1,0 +1,13 @@
+﻿extends layout
+
+block content
+ h1 Register
+  form(method='post' action='/register')
+    div
+        label Username
+        input(name='username' required placeholder='Username')
+    div
+        label Password
+        input(name='password' required placeholder='password' type=password)
+    div
+    input(type='submit' value='Create Account')
